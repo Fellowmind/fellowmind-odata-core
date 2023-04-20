@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fellowmind.OData.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Fellowmind.OData.Core.Attributes.CrmEntityNameAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:Fellowmind.OData.Core.Attributes.CrmEntityNameAttribute"/>.
+            </summary>
+            <param name="entityName">Name of the entity</param>
+            <param name="entityNamePlural">Name of the entity in plural. If not specified, then plural is EntityName + 's'</param>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.NotDefined">
+            <summary>
+            When PluralExepton is omitted, we assume normal.
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.Normal">
+            <summary>
+            the default way: add an s... For example: Quote => Quotes
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.Auto">
+            <summary>
+            Assumes a couple of rules. Give it a try:) 
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.DoNothing">
+            <summary>
+            For example: Fish => Fish
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.YtoIES">
+            <summary>
+            For example: Opportinity => Opportunities
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.OtoOES">
+            <summary>
+            For example: Potato => Potatoes
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.ONtoA">
+            <summary>
+            For example: Criterion => Criteria
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.XtoES">
+            <summary>
+            For nouns ending with the letters -s, -x, -z, -sh or -ch, add -es, For example: Bus => Busses
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.IStoES">
+            <summary>
+            For example: Axis => Axes
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.UStoI">
+            <summary>
+            For example: fungus → fungi
+            </summary>
+        </member>
+        <member name="F:Fellowmind.OData.Core.Extensions.PluralOperation.Irregular">
+            <summary>
+            For example: Child => Children
+            </summary>
+        </member>
+    </members>
+</doc>
